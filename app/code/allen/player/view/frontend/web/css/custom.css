@@ -1,0 +1,11 @@
+/* Quick adjustments for integrating the player into top header*/
+.page-header .header.panel{
+	float:right;
+}
+
+.mejs__container{
+	background:#6e716e;
+}
+.mejs__controls:not([style*="display: none"]){
+	background:none;
+}

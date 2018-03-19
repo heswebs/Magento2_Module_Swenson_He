@@ -1,0 +1,31 @@
+<script type="text/javascript">
+  require([
+    "jquery", "mediaelement"
+    ], function($){
+
+   $(document).ready(function(){
+   	$('audio').mediaelementplayer();
+   })
+});
+</script>
+
+<script type="text/javascript">
+  require([
+    "jquery", "pjax"
+    ], function($, Pjax){
+
+   $(window).load(function(){
+      var pjax = new Pjax({
+      elements: "a", 
+      selectors: ["main"]
+    })
+   })
+});
+
+</script>
+
+<audio 
+  src="<?php echo $block->getViewFileUrl('allen_player::audios/music.mp3'); ?>" 
+  type="audio/mp3">
+</audio> 
+

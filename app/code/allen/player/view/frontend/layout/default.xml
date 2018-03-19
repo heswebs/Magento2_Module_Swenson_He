@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	    <head>
+	        <!-- Add mediaelement.js cdn -->
+	        <link rel="stylesheet" src="allen_player/css/mediaelementplayer.min.css"/>
+	        <link rel="stylesheet" src="allen_player/css/custom.css"/>
+
+	         
+	   </head>
+
+		<referenceContainer name="header.panel.wrapper">
+		    <block class="Magento\Framework\View\Element\Template" 
+		    	   name="header.mini.container" 
+		    	   template="allen_player::player.phtml" 
+		    	   />
+		</referenceContainer>
+</page>
